@@ -12,6 +12,6 @@ namespace oop2._3.Interfaces
 
         void RemoveObserver(IObserver observer);
 
-        void NotifyObservers();
+        void NotifyObservers(ICommand gameCommand);
     }
 }

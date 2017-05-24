@@ -8,6 +8,6 @@ namespace oop2._3.Interfaces
 {
     interface IObserver
     {
-        void HandleEvent();
+        void HandleEvent(ICommand gameCommand);
     }
 }

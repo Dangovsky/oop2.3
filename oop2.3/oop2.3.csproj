@@ -46,8 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Drawing\DrawCommand.cs" />
     <Compile Include="Drawing\Drawer.cs" />
     <Compile Include="Drawing\DrawFactory.cs" />
+    <Compile Include="Exceptions\ChessExeption.cs" />
+    <Compile Include="Exceptions\WinException.cs" />
     <Compile Include="Figures\Bishop.cs" />
     <Compile Include="Figures\King.cs" />
     <Compile Include="Figures\Knight.cs" />
@@ -67,20 +70,23 @@
     <Compile Include="Interfaces\IObserver.cs" />
     <Compile Include="Interfaces\IPlayer.cs" />
     <Compile Include="Interfaces\IStraregy.cs" />
+    <Compile Include="Iterators\IteratorForList.cs" />
     <Compile Include="Players\AIPlayer.cs" />
+    <Compile Include="Players\Stategies\Aggressive.cs" />
+    <Compile Include="Players\Stategies\Defensive.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Players\Stategies\Computer.cs" />
-    <Compile Include="Players\Stategies\Human.cs" />
+    <Compile Include="Unit\CounterSingleton.cs" />
+    <Compile Include="Unit\GameCommand.cs" />
     <Compile Include="Unit\GameMakerFactory.cs" />
     <Compile Include="Unit\Game.cs" />
-    <Compile Include="Unit\GameField.cs" />
     <Compile Include="Unit\GameMemento.cs" />
     <Compile Include="Players\HumanPlayerAdapter.cs">
       <SubType>Form</SubType>
     </Compile>
     <EmbeddedResource Include="GameControlForm.resx">
       <DependentUpon>GameControlForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

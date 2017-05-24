@@ -8,6 +8,6 @@ namespace oop2._3.Interfaces
 {
     interface ICommand
     {
-        void Execute();
+        IFigure[,] Execute(ref bool WhiteTurn, out IFigure killedFigure);
     }
 }

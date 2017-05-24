@@ -9,6 +9,6 @@ namespace oop2._3.Interfaces
 {
     interface IStraregy
     {
-        void MakeTurn(GameField gameField);
+        int[] Turn(IFigure[,] board, int numberOfRecursions, out IFigure killedFigure);
     }
 }
